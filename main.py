@@ -35,7 +35,7 @@ def getImage():
     out = np.clip(pixels, 0, 255).astype(np.uint8)
 
     Image.fromarray(out).save(outputFile)
-    print(f"S{outputFile} has been created")
+    print(f"{outputFile} has been created")
 
 def main():
     getImage()
